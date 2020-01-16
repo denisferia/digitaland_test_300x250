@@ -1,0 +1,7 @@
+#IDE Generated#
+.DS_Store
+.idea/
+/.sass-cache/
+
+#Compiled Files#
+css/*.css

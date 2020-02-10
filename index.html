@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="ad.size" content="width=300,height=250">
+    <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
     <title>OVERWATCH</title>
-    <link href="css/main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="MAIN-CTA">
     <section class="banner">
         <article class="slide1">
             <h3 class="txt"><span class="white">We are</span><span class="orange">Courage</span></h3>
@@ -42,6 +44,13 @@
     </section>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
-<script src="scripts/animation-timeline.js"></script>
+<script src="animation-timeline.js"></script>
+<script type="text/javascript">
+    function bgExitHandler(e) {
+        Enabler.exit('Exit CTA');
+    }
+
+    document.getElementById('MAIN-CTA').addEventListener('click', bgExitHandler, false);
+</script>
 </body>
 </html>
